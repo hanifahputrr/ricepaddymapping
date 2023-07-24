@@ -1,6 +1,6 @@
 # ricepaddymapping with multi-temporal data and CNN-RF Hybrid Method
 Read Me:
-Rice Paddy Mapping with CNN-RF Hybrid
+Rice Paddy mapping with optical satellite image from Google Earth Engine platform using the CNN-RF Hybrid method, with OA of 0.950.
 1. pre-processing your satellite image data through GEE Platform
 
   example code for pre-processing satellite image via GEE
@@ -22,7 +22,7 @@ var S2A = ee.ImageCollection('COPERNICUS/S2_SR')
                 .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 5))
                 .map(maskS2clouds)
                 .median()
-                .clip(indramayu);
+                .clip(boundary);
 //print(S2A);
 //variabel visualisasi 
 var RGBTrue = single.select(['B4', 'B3', 'B2']);
@@ -131,7 +131,7 @@ image: rgvi2_resampled,
 description: 'sentinel2A_06_05_2022_rgvi',
 folder: 'Sentinel',
 scale: 10,
-region: region u selected,
+region: boundary,
 crs: 'EPSG:4326',
 });
 
