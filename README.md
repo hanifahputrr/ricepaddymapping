@@ -1,0 +1,8 @@
+# ricepaddymapping with multi-temporal data and CNN-RF Hybrid Method
+Read Me:
+Rice Paddy Mapping with CNN-RF Hybrid
+1. pre-processing your satellite image data through GEE Platform
+2. import all the dataset, including vegetation inices that were calculated
+3. import dataset and ground_truth
+4. build the CNN-RF hybrid model
+5. train model and save
