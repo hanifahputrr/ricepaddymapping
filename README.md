@@ -1,4 +1,4 @@
-# ricepaddymapping with multi-temporal data and CNN-RF Hybrid Method
+# Rice Paddy Mapping with multi-temporal data and CNN-RF Hybrid Method
 Read Me:
 Rice Paddy mapping with optical satellite image from Google Earth Engine platform using the CNN-RF Hybrid method, with OA of 0.950.
 1. pre-processing your satellite image data through GEE Platform
